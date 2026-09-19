@@ -30,6 +30,7 @@ An IoT and Machine Learning-based system designed to capture visual imagery and 
 
 The hardware node relies on an ESP32 processing unit connected to an Arducam module alongside PM2.5 and PM10 dust sensors (e.g., SDS011 or PMS5003).
 
+<img width="1805" height="740" alt="image" src="https://github.com/user-attachments/assets/54bb2d4d-512a-4ccb-a472-ec029bbc8ff2" />
 <img width="1805" height="740" alt="image" src="https://github.com/user-attachments/assets/94a70e25-1220-4792-bd49-2f0b31e143bf" />
 
 ---
