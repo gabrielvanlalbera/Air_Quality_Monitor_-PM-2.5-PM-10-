@@ -1,4 +1,4 @@
-# Air_Quality_Monitor_-PM-2.5-PM-10-
+
 In this project i have quantified the amount of Particulate Matter 2.5 and 10 that are present in a single image and seperate them according to the levels of each of their contents into 3 categories :"Okay" , "Hazardous" and "Danger".  
 
 I have also the use of an object for destructing the view of an image to study its various prediction levels using Machine Learning Algorithm, I have found some interesting results and can be further deployed to smartphone cameras. 
@@ -30,8 +30,7 @@ An IoT and Machine Learning-based system designed to capture visual imagery and 
 
 The hardware node relies on an ESP32 processing unit connected to an Arducam module alongside PM2.5 and PM10 dust sensors (e.g., SDS011 or PMS5003).
 
-
-<img width="1723" height="741" alt="image" src="https://github.com/user-attachments/assets/52c93a77-80dc-4ee2-9a12-0cb05671b7c0" />
+<img width="1805" height="740" alt="image" src="https://github.com/user-attachments/assets/94a70e25-1220-4792-bd49-2f0b31e143bf" />
 
 ---
 
