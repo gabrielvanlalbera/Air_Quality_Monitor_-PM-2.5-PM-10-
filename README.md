@@ -50,8 +50,8 @@ To ensure rigorous dataset quality and eliminate time-of-day bias, data collecti
                 ▼
   [ Synchronized Daily Data Record ] ───► [ Feature Extraction & ML Model ]
 <img width="435" height="437" alt="mi" src="https://github.com/user-attachments/assets/44f1174a-19b9-4ff3-ad1c-f8a8631807eb" />
-
-### 🤖 Arduino & ESP32 Firmware Highlights
+---
+## 🤖 Arduino & ESP32 Firmware Highlights
 
 - **Dual-Core & Multitasking Execution:** Leverages FreeRTOS on the ESP32 to run camera capture tasks and sensor polling on separate cores, eliminating frame drops and timing lag.
 - **Hardware Bus Management:** Controls the Arducam via high-speed **SPI** for frame retrieval while reading PM2.5/PM10 sensor frames concurrently over **UART / HardwareSerial**.
