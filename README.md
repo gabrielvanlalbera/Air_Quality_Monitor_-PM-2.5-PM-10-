@@ -50,3 +50,12 @@ To ensure rigorous dataset quality and eliminate time-of-day bias, data collecti
                 ▼
   [ Synchronized Daily Data Record ] ───► [ Feature Extraction & ML Model ]
 <img width="435" height="437" alt="mi" src="https://github.com/user-attachments/assets/44f1174a-19b9-4ff3-ad1c-f8a8631807eb" />
+
+### 🤖 Arduino & ESP32 Firmware Highlights
+
+- **Dual-Core & Multitasking Execution:** Leverages FreeRTOS on the ESP32 to run camera capture tasks and sensor polling on separate cores, eliminating frame drops and timing lag.
+- **Hardware Bus Management:** Controls the Arducam via high-speed **SPI** for frame retrieval while reading PM2.5/PM10 sensor frames concurrently over **UART / HardwareSerial**.
+- **Synchronized Capture Protocol:** Triggers an internal clock interrupt (via Network Time Protocol / NTP) to take image snapshots and sensor readings at the exact same daily timestamp.
+- **API & Weather Fetching:** Initiates non-blocking HTTP/HTTPS GET requests to retrieve live weather parameters (humidity, temperature, wind) to bundle with the local sensor data.
+- **Payload Structuring & Transmission:** Serializes the raw image binary and sensor metrics into a structured JSON payload for transmission to a Firebase/MQTT cloud backend or direct mobile app socket.
+- **Power & Memory Optimization:** Utilizes deep sleep modes between capture intervals and efficiently manages PSRAM allocation to process JPEG frames without exceeding board RAM limits.
